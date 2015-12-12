@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_root"
+    android:layout_height="match_parent"
+    tools:context="com.diaoxinqiang.bookapp.activities.GuideActivity">
+
+
+    <com.diaoxinqiang.bookapp.view.ColorAnimationView
+        android:id="@+id/ColorAnimationView"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="30dp"/>
+
+    <!--<com.diaoxinqiang.bookapp.view.RippleLinearLayout-->
+        <!--android:id="@+id/rll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@android:color/transparent">-->
+
+       <!-- <com.cengalabs.flatui.views.FlatTextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:text="立即体验"
+            android:textColor="#333333"/>-->
+
+
+    <!--</com.diaoxinqiang.bookapp.view.RippleLinearLayout>-->
+
+</RelativeLayout>

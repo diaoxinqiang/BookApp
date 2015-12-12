@@ -1,0 +1,40 @@
+<com.diaoxinqiang.bookapp.view.RippleLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.diaoxinqiang.bookapp.Fragment.RippleFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome1"
+            android:layout_margin="60dp"
+            android:layout_above="@+id/fb"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="59dp"/>
+
+        <com.cengalabs.flatui.views.FlatButton
+            android:layout_width="120dp"
+            android:id="@+id/fb"
+            android:layout_height="40dp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="点击体验"
+            android:gravity="center"
+            android:layout_marginBottom="60dp"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.diaoxinqiang.bookapp.view.RippleLinearLayout>
+
+
