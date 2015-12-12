@@ -14,16 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cafeae8-a116-4d1e-8a8e-b59800940e87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/compile-libs/androidannotations-3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/androidannotations-api-3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/1_androidannotations_api_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/androidannotations_api_3_2.xml" />
-      <change type="DELETED" beforePath="D:\AS_workspace\BookApp\.idea\libraries\androidannotations_api_3_3_2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/diaoxinqiang/bookapp/activities/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/diaoxinqiang/bookapp/activities/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BookApp.iws" />
@@ -2332,6 +2322,13 @@
       <option name="number" value="Default" />
       <updated>1449652135391</updated>
     </task>
+    <task id="LOCAL-00001" summary="解决AndroidAnnotations框架与sdk版本变更冲突">
+      <created>1449913387355</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449913387355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2389,6 +2386,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="解决AndroidAnnotations框架与sdk版本变更冲突" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决AndroidAnnotations框架与sdk版本变更冲突" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
