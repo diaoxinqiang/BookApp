@@ -1,4 +1,4 @@
-package com.diaoxinqiang.bookapp;
+package com.diaoxinqiang.bookapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.diaoxinqiang.bookapp.R;
 import com.diaoxinqiang.bookapp.bean.CategoryItem;
 
 import java.util.List;

@@ -10,7 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.diaoxinqiang.bookapp.R;
-import com.diaoxinqiang.bookapp.SideListAdapter;
+import com.diaoxinqiang.bookapp.adapter.SideListAdapter;
+import com.diaoxinqiang.bookapp.adapter.BookListAdapter;
 import com.diaoxinqiang.bookapp.bean.Book;
 import com.diaoxinqiang.bookapp.bean.CategoryItem;
 import com.diaoxinqiang.bookapp.engine.BookCategoryEnigine;
@@ -38,8 +39,16 @@ public class MainActivity extends FragmentActivity {
 
     @ViewById(R.id.text_test)
     TextView tv_test;
+
+    @ViewById(R.id.lv_books)
+    ListView lv_books;
+    private BookListAdapter bookListAdapter;
+
+
+
     private SideListAdapter sideListAdapter;
     private List<CategoryItem> categoryItems;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,13 +60,15 @@ public class MainActivity extends FragmentActivity {
         BookCategoryEnigine bookCategoryEnigine = new BookCategoryEnigine(this);
         bookCategoryEnigine.getBookCategory();
     }
+
     @UiThread
-    public void UpdateSideListView(List<CategoryItem> categoryItems){
-        LogUtil.i("UpdateSideListView   "+categoryItems.toString());
-        sideListAdapter = new SideListAdapter(categoryItems,this);
+    public void UpdateSideListView(List<CategoryItem> categoryItems) {
+        LogUtil.i("UpdateSideListView   " + categoryItems.toString());
+        sideListAdapter = new SideListAdapter(categoryItems, this);
         menu.setAdapter(sideListAdapter);
         this.categoryItems = categoryItems;
     }
+
     @AfterViews
     public void initViews() {
 //        mPullToRefreshView.setRefreshStyle(PullToRefreshView.MAX_OFFSET_ANIMATION_DURATION);
@@ -91,12 +102,15 @@ public class MainActivity extends FragmentActivity {
 
     private void getBooksData(int position) {
         BookEnigine bookEnigine = new BookEnigine(this);
-        bookEnigine.getBook(categoryItems.get(position).getId(),2,10);
+        bookEnigine.getBook(categoryItems.get(position).getId(), 2, 10);
     }
 
-   @UiThread
+    @UiThread
     public void UpDateMainListView(List<Book> bookList) {
-       tv_test.setText(bookList.toString());
-       mPullToRefreshView.setRefreshing(false);
-   }
+//        tv_test.setText(bookList.toString());
+        //设置listViewAdapter
+        bookListAdapter  = new BookListAdapter(this,bookList);
+        lv_books.setAdapter(bookListAdapter);
+        mPullToRefreshView.setRefreshing(false);
+    }
 }
