@@ -1,34 +1,36 @@
 <com.diaoxinqiang.bookapp.view.ResideLayout
+    android:id="@+id/reside_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/reside_layout"
     >
 
-    <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/stars"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/stars"/>
 
 
         <ListView
             android:id="@+id/menu"
-            android:numColumns="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:divider="@null"
+            android:numColumns="2"/>
+
+        <com.cengalabs.flatui.views.FlatButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-            <com.cengalabs.flatui.views.FlatButton
-                android:layout_width="wrap_content"
-                android:text="探索"
-                android:textSize="20dp"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginBottom="30dp"
-                android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="探索"
+            android:textSize="20dp"/>
 
     </FrameLayout>
 
@@ -40,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/balloon"/>
+            android:src="@android:color/white"/>
 
         <com.yalantis.phoenix.PullToRefreshView
             android:id="@+id/pull_to_refresh"
@@ -49,10 +51,10 @@
 
             <ListView
                 android:id="@+id/lv_books"
-                android:divider="@null"
-                android:dividerHeight="0dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:divider="#FFF"
+                android:dividerHeight="1px"/>
 
         </com.yalantis.phoenix.PullToRefreshView>
 
