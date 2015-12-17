@@ -111,6 +111,9 @@ public class MainActivity extends FragmentActivity {
         //设置listViewAdapter
         bookListAdapter  = new BookListAdapter(this,bookList);
         lv_books.setAdapter(bookListAdapter);
+        /**
+         * 设置点击事件
+         */
         mPullToRefreshView.setRefreshing(false);
     }
 }
